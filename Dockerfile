@@ -16,4 +16,4 @@ VOLUME ["/root/.ivy2/","/root/.sbt/", "/code"]
 
 WORKDIR /code
 
-ENTRYPOINT activator
+# ENTRYPOINT activator
