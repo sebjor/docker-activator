@@ -20,5 +20,5 @@ cd <source code folder>
 
  - Run any activator command in the following way (take compile for example):
 ```
-docker run --rm -it -v ivy2:/root/.ivy2 -v sbt:/root/.sbt -v "$(pwd)":/code edwxie/activator activator compile
+docker run --rm -v ivy2:/root/.ivy2 -v sbt:/root/.sbt -v "$(pwd)":/code edwxie/activator activator compile
 ```
