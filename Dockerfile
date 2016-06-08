@@ -3,7 +3,6 @@ MAINTAINER Edward Xie <waterscar@gmail.com>
 
 # Activator version
 ENV VERSION 1.3.10
-ENV JAVA_PACKAGE       jdk
 
 # Download and unarchive Java
 RUN mkdir -p /opt && mkdir -p /code && cd /opt &&\
