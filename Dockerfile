@@ -8,7 +8,8 @@ ENV VERSION 1.3.10
 RUN mkdir -p /opt && mkdir -p /code && cd /opt &&\
   curl https://downloads.typesafe.com/typesafe-activator/${VERSION}/typesafe-activator-${VERSION}-minimal.zip -O &&\
   unzip typesafe-activator-${VERSION}-minimal.zip && ln -s /opt/activator-${VERSION}-minimal /opt/activator &&\
-  rm -rf typesafe-activator-${VERSION}-minimal.zip
+  rm -rf typesafe-activator-${VERSION}-minimal.zip &&\
+  apk add --no-cache libstdc++
 
 ENV PATH ${PATH}:/opt/activator/bin
 
